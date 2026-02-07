@@ -23,7 +23,7 @@ Traditional data migration relies on manual rules and scripts, making it error-p
 - Scikit-learn
 
 
-flowchart TD
+## FLOWCHART TD
    - A[Source Database<br>PostgreSQL] --> B[Schema Discovery]
    - B --> C[Sample Data Extraction]
    - C --> D[AI Column Mapping Engine]
