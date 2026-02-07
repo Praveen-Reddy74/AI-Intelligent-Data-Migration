@@ -23,10 +23,6 @@ Traditional data migration relies on manual rules and scripts, making it error-p
 - Scikit-learn
 
 
-
-
-
-
 flowchart TD
    - A[Source Database<br>PostgreSQL] --> B[Schema Discovery]
    - B --> C[Sample Data Extraction]
@@ -37,13 +33,13 @@ flowchart TD
     -  E -->|No| G[Flag for Review]
 
   - F --> H[Explainability Layer]
-   -G --> H
+   - G --> H
 
-  -H --> I[Migration & Transformation]
-    -I --> J[Target Database<br>PostgreSQL]
+  - H --> I[Migration & Transformation]
+    - I --> J[Target Database<br>PostgreSQL]
 
- -J --> K[Validation Framework]
- -K --> L[Sankey Visualization<br>Dashboard]
+ - J --> K[Validation Framework]
+ - K --> L[Sankey Visualization<br>Dashboard]
 
 
  ## How to Run
