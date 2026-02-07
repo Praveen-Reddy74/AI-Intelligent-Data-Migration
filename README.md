@@ -22,6 +22,25 @@ Traditional data migration relies on manual rules and scripts, making it error-p
 - Plotly
 - Scikit-learn
 
+flowchart TD
+    A[Source Database<br>PostgreSQL] --> B[Schema Discovery]
+    B --> C[Sample Data Extraction]
+    C --> D[AI Column Mapping Engine]
+
+    D --> E{Confidence > Threshold?}
+    E -->|Yes| F[Accept Mapping]
+    E -->|No| G[Flag for Review]
+
+    F --> H[Explainability Layer]
+    G --> H
+
+    H --> I[Migration & Transformation]
+    I --> J[Target Database<br>PostgreSQL]
+
+    J --> K[Validation Framework]
+    K --> L[Sankey Visualization<br>Dashboard]
+
+
 ## How to Run
 ```bash
 pip install -r requirements.txt
